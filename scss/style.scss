@@ -1,0 +1,67 @@
+$primary: #3292a6;
+$primary-overlay: rgba(50,146,166,0.8);
+
+body {
+  margin-top: 105px;
+}
+
+.navbar {
+  box-shadow: 2px 2px 5px $primary;
+  opacity: 0.9;
+  background: #fff;
+  //adds the little line of green at the bottom of the nav
+
+  .nav-item {//nested content, can't do in css but here will only affect the
+    //nav-bar item within the navbar class
+    font-size: 1.4rem;
+    padding-right: 1.4rem;
+  }
+}
+#showcase {
+  position: relative;
+  background: url('../img/mountains.jpg');
+  min-height: 600px;
+  .primary-overlay {
+    background: $primary-overlay;
+    position: absolute;
+    // absolute for when you want child element to cover the parent
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.info-header {
+  width: 50%;
+  margin: auto;
+  // margin auto to put in middle
+  border-bottom: 1px #ddd solid;
+}
+#authors {
+  //bring the image up slightly
+  img {
+    margin-top: -50px;
+  }
+  .card:hover {
+    background: $primary;
+    //change the color to primary on hover
+    color: #fff;
+  }
+  .fab {
+    color: #fff;
+  }
+}
+
+// increase the size of the main heading text on large screen
+@media(max-width: 768px) {
+  #showcase {
+    min-height: 500px;
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  //to make the bottom margin when it stacks
+  .mb-resp {
+    margin-bottom: 1rem;
+  }
+}

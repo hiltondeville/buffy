@@ -1,0 +1,74 @@
+/* line 4, ../../../../MAMP/htdocs/boot4/misuxe/scss/style.scss */
+body {
+  margin-top: 105px;
+}
+
+/* line 8, ../../../../MAMP/htdocs/boot4/misuxe/scss/style.scss */
+.navbar {
+  box-shadow: 2px 2px 5px #3292a6;
+  opacity: 0.9;
+  background: #fff;
+}
+
+/* line 14, ../../../../MAMP/htdocs/boot4/misuxe/scss/style.scss */
+.navbar .nav-item {
+  font-size: 1.4rem;
+  padding-right: 1.4rem;
+}
+
+/* line 20, ../../../../MAMP/htdocs/boot4/misuxe/scss/style.scss */
+#showcase {
+  position: relative;
+  background: url("../img/mountains.jpg");
+  min-height: 600px;
+}
+
+/* line 24, ../../../../MAMP/htdocs/boot4/misuxe/scss/style.scss */
+#showcase .primary-overlay {
+  background: rgba(50, 146, 166, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 34, ../../../../MAMP/htdocs/boot4/misuxe/scss/style.scss */
+.info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px #ddd solid;
+}
+
+/* line 42, ../../../../MAMP/htdocs/boot4/misuxe/scss/style.scss */
+#authors img {
+  margin-top: -50px;
+}
+
+/* line 45, ../../../../MAMP/htdocs/boot4/misuxe/scss/style.scss */
+#authors .card:hover {
+  background: #3292a6;
+  color: #fff;
+}
+
+/* line 50, ../../../../MAMP/htdocs/boot4/misuxe/scss/style.scss */
+#authors .fab {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  /* line 57, ../../../../MAMP/htdocs/boot4/misuxe/scss/style.scss */
+  #showcase {
+    min-height: 500px;
+  }
+  /* line 59, ../../../../MAMP/htdocs/boot4/misuxe/scss/style.scss */
+  #showcase h1 {
+    font-size: 4rem;
+  }
+  /* line 64, ../../../../MAMP/htdocs/boot4/misuxe/scss/style.scss */
+  .mb-resp {
+    margin-bottom: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

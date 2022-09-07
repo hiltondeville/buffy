@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"$primary: #3292a6;\n$primary-overlay: rgba(50,146,166,0.8);\n\nbody {\n  margin-top: 105px;\n}\n\n.navbar {\n  box-shadow: 2px 2px 5px $primary;\n  opacity: 0.9;\n  background: #fff;\n  //adds the little line of green at the bottom of the nav\n\n  .nav-item {//nested content, can't do in css but here will only affect the\n    //nav-bar item within the navbar class\n    font-size: 1.4rem;\n    padding-right: 1.4rem;\n  }\n}\n#showcase {\n  position: relative;\n  background: url('../img/mountains.jpg');\n  min-height: 600px;\n  .primary-overlay {\n    background: $primary-overlay;\n    position: absolute;\n    // absolute for when you want child element to cover the parent\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n  }\n}\n.info-header {\n  width: 50%;\n  margin: auto;\n  // margin auto to put in middle\n  border-bottom: 1px #ddd solid;\n}\n#authors {\n  //bring the image up slightly\n  img {\n    margin-top: -50px;\n  }\n  .card:hover {\n    background: $primary;\n    //change the color to primary on hover\n    color: #fff;\n  }\n  .fab {\n    color: #fff;\n  }\n}\n\n// increase the size of the main heading text on large screen\n@media(max-width: 768px) {\n  #showcase {\n    min-height: 500px;\n    h1 {\n      font-size: 4rem;\n    }\n  }\n  //to make the bottom margin when it stacks\n  .mb-resp {\n    margin-bottom: 1rem;\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": ";AAGA,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,KAAK;CAClB;;;AAED,AAAA,OAAO,CAAC;EACN,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CARf,OAAO;EASf,OAAO,EAAE,GAAG;EACZ,UAAU,EAAE,IAAI;CAQjB;;;AAXD,AAME,OANK,CAML,SAAS,CAAC;EAER,SAAS,EAAE,MAAM;EACjB,aAAa,EAAE,MAAM;CACtB;;;AAEH,AAAA,SAAS,CAAC;EACR,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,2BAA2B;EACvC,UAAU,EAAE,KAAK;CAUlB;;;AAbD,AAIE,SAJO,CAIP,gBAAgB,CAAC;EACf,UAAU,EAvBI,uBAAoB;EAwBlC,QAAQ,EAAE,QAAQ;EAElB,GAAG,EAAE,CAAC;EACN,IAAI,EAAE,CAAC;EACP,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb;;;AAEH,AAAA,YAAY,CAAC;EACX,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;EAEZ,aAAa,EAAE,cAAc;CAC9B;;;AACD,AAEE,QAFM,CAEN,GAAG,CAAC;EACF,UAAU,EAAE,KAAK;CAClB;;;AAJH,AAKE,QALM,CAKN,KAAK,AAAA,MAAM,CAAC;EACV,UAAU,EA7CJ,OAAO;EA+Cb,KAAK,EAAE,IAAI;CACZ;;;AATH,AAUE,QAVM,CAUN,IAAI,CAAC;EACH,KAAK,EAAE,IAAI;CACZ;;AAIH,MAAM,EAAC,SAAS,EAAE,KAAK;;EACrB,AAAA,SAAS,CAAC;IACR,UAAU,EAAE,KAAK;GAIlB;;EALD,AAEE,SAFO,CAEP,EAAE,CAAC;IACD,SAAS,EAAE,IAAI;GAChB;;EAGH,AAAA,QAAQ,CAAC;IACP,aAAa,EAAE,IAAI;GACpB"
+}
